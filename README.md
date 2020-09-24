@@ -1,13 +1,11 @@
 <h1 align=center>🖥️</h1>
 <h1 align=center> Marcus Stewart's Portfolio </h1>
 
-<p align=center> See [Link Here]. Made with Gatsby. ❤️ </p>
+<p align=center> See [Website Link Here]. Made with Gatsby. ❤️ </p>
 
 <p align=center>
   [Website Badge Here]
 </p>
-
-<br>
 
 ## 🤓 Author
 
