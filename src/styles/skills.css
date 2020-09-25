@@ -1,0 +1,11 @@
+div {
+  display: block;
+}
+
+.skills {
+  font-size: 28px;
+  padding-top: 10px;
+  letter-spacing: 1.2px;
+  color: #77001d;
+  font-family: "Raleway", sans-serif;
+}
