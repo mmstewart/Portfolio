@@ -1,9 +1,9 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-import "../components/layout.css"
-import "../styles/index.css"
+import "../components/layout.css";
+import "../styles/index.css";
 
 const IndexPage = () => (
   <div>
@@ -12,7 +12,7 @@ const IndexPage = () => (
         <SEO title="Home" />
         <div class="paragraph">
           <p class="intro">
-            Hey, I'm Marcus
+            <u>Hey, I'm Marcus</u>
             <span class="blinking-cursor">|</span>
           </p>
           <h1>
@@ -31,6 +31,6 @@ const IndexPage = () => (
       </div>
     </Layout>
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

@@ -1,9 +1,9 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-import "../components/layout.css"
-import "../styles/skills.css"
+import "../components/layout.css";
+import "../styles/skills.css";
 
 const SkillsPage = () => (
   <div>
@@ -11,7 +11,9 @@ const SkillsPage = () => (
       <div class="outline">
         <SEO title="Skills" />
         <div class="paragraph">
-          <p class="skills">Skills</p>
+          <p class="skills">
+            <u>Skills</u>
+          </p>
           <h1>
             Passionate about writing efficient, modern, and sustainable code.
           </h1>
@@ -26,6 +28,6 @@ const SkillsPage = () => (
       </div>
     </Layout>
   </div>
-)
+);
 
-export default SkillsPage
+export default SkillsPage;
