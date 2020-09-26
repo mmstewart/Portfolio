@@ -16,7 +16,7 @@ const IndexPage = () => (
             <span class="blinking-cursor">|</span>
           </p>
           <h1>
-            I am a web and software develop proficient at creating web
+            I am a web and software developer proficient at creating web
             applications and solving challenging solutions.
           </h1>
           <p>
