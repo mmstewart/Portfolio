@@ -25,6 +25,10 @@ body {
   overflow-y: auto;
 }
 
+#main-color {
+  color: #77001d;
+}
+
 /* Marcus Stewart Header */
 .sidebar h2 {
   display: block;
