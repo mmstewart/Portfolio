@@ -20,12 +20,12 @@ const IndexPage = () => (
             applications and solving challenging solutions.
           </h1>
           <p>
-            You can mainly catch me working with front-end frameworks to create
+            You can catch me working with front-end frameworks to create
             front-end websites and projects. I also have experience in some
             other object-oriented programs such as Java, Python, C as well as
-            networking and servers. In general, I love learning new languages
-            and technology that help develop my skills and challenge my growth
-            as a developer.
+            networking and servers. Continuous learner that loves to learn new
+            languages and technology that help develop my skills and challenge
+            my growth as a developer.
           </p>
         </div>
       </div>
