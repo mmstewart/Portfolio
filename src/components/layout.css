@@ -9,20 +9,55 @@ body {
   transition: all 300ms ease-in-out 0s;
 }
 
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: rgb(100, 100, 100);
+  background: transparent;
+  border-bottom: none;
+  transition: all 500ms ease-in-out 0s;
+}
+
+.navbar > div {
+  display: flex;
+  background: #fff;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 0.8rem;
+  transition: padding 500ms ease-in-out 0s;
+}
+
+.navbar h2 {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none !important;
+}
+
 /* Sidebar Nav */
 .sidebar {
   position: fixed;
   display: flex;
   flex-direction: column;
   background-color: #fff;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
   top: 0px;
   left: 0px;
   bottom: 0px;
   width: 260px;
   z-index: 100;
-  padding-top: 20px;
+  padding: 1.4rem 0.5rem;
   box-sizing: border-box;
-  overflow-y: auto;
+  overflow-y: none;
 }
 
 #main-color {
@@ -45,7 +80,7 @@ body {
   letter-spacing: 1.1px;
   padding: 0px 20px;
   color: rgb(100, 100, 100);
-  padding-bottom: 175px;
+  padding-bottom: 150px;
   line-height: 22px;
   font-size: 14px;
   font-family: "Raleway", sans-serif;
@@ -61,6 +96,90 @@ body {
   text-transform: uppercase;
   font-size: 20px;
   font-family: "Raleway", sans-serif;
+}
+
+/* Link Hover Animation */
+.lens .effect li {
+  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  transition: 0.3s ease-out;
+}
+.lens .effect li #ln::before {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-top: 2px solid #77001d;
+  border-left: 2px solid #77001d;
+  transition: 0.3s;
+  opacity: 0;
+}
+.lens .effect li #ln::after {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid #77001d;
+  border-bottom: 2px solid #77001d;
+  transition: 0.3s;
+  opacity: 0;
+}
+.lens .effect li::before {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-right: 2px solid #77001d;
+  border-top: 2px solid #77001d;
+  transition: 0.3s;
+  opacity: 0;
+}
+.lens .effect li::after {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-left: 2px solid #77001d;
+  border-bottom: 2px solid #77001d;
+  transition: 0.3s;
+  opacity: 0;
+}
+.lens .effect li:hover {
+  color: #77001d;
+}
+.lens .effect li:hover::before {
+  opacity: 1;
+  right: 5px;
+  top: 5px;
+}
+.lens .effect li:hover::after {
+  opacity: 1;
+  left: 5px;
+  bottom: 5px;
+}
+.lens .effect li:hover #ln::before {
+  opacity: 1;
+  left: 5px;
+  top: 5px;
+}
+.lens .effect li:hover #ln::after {
+  opacity: 1;
+  right: 5px;
+  bottom: 5px;
 }
 
 /* Contact Info in Sidebar */
@@ -81,6 +200,12 @@ a {
   text-decoration: none;
   font-weight: 700;
   color: #77001d;
+  transition: all 1s ease-in-out;
+}
+a:hover,
+a:focus {
+  color: #77001eb0;
+  transition: all 1s ease-in-out;
 }
 
 .socials ul {
@@ -105,9 +230,38 @@ a {
 /* Footer in Sidebar */
 .footer {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 6px 20px;
   color: rgb(100, 100, 100);
   font-size: 12px;
   font-family: "Raleway", sans-serif;
-  padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .lay {
+    position: absolute;
+    left: 260px;
+  }
+}
+
+@media (max-width: 769px) {
+  .sidebar {
+    display: none;
+  }
+
+  /* Top Padding on Main Section on Width Change */
+  .under {
+    padding-top: 60px;
+  }
+
+  /* Main Section on Width Change */
+  .outline {
+    text-align: center;
+    margin: 3rem auto !important;
+    height: 100% !important;
+    padding: 0px 10rem !important;
+  }
 }
