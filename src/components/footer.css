@@ -1,0 +1,45 @@
+.foot {
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 2.5rem 6rem;
+  transition: all 300ms ease-in-out 0s;
+}
+
+.foot .contacts {
+  display: block;
+  color: rgb(100, 100, 100);
+  letter-spacing: 1.1px;
+  font-size: calc(14px + 2 * ((100vw - 330px) / 438));
+  font-family: "Raleway", sans-serif;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.foot .contacts a {
+  text-decoration: underline;
+}
+
+.social ul li {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 180px;
+}
+
+.foot .social div {
+  margin: 0px auto;
+}
+
+.foot .social ul li {
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .foot {
+    display: none;
+  }
+}
