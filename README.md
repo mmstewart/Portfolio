@@ -13,7 +13,7 @@
 
 ## 📚 Resources
 
-<p>Resources that helped make this website possible!</p>
+<p>Resources that helped me make this website possible!</p>
 
 - [Link Hover Animation](https://codepen.io/teeganlincoln/pen/bVNgBR)
 - [Blinking Cursor Animation](https://codepen.io/ArtemGordinsky/pen/GnLBq?js-preprocessor=none)
