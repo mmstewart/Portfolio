@@ -7,8 +7,9 @@ div {
   flex-direction: column;
   justify-content: center;
   -webkit-box-pack: center;
-  padding: 0px 30rem;
-  margin: 3rem 0px 10rem;
+  padding: 0px 10rem;
+  margin: 4rem 0px 8rem;
+  opacity: 1;
 }
 
 .paragraph {
