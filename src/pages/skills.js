@@ -9,164 +9,170 @@ import "../styles/skills.css";
 const SkillsPage = ({ data }) => (
   <div>
     <Layout>
-      <div class="outline">
-        <SEO title="Skills" />
-        <div class="paragraph">
-          <p class="skills">
-            <u>Skills</u>
-          </p>
-          <h1>
-            Passionate about writing efficient, modern, and sustainable code.
-          </h1>
-          <p>
-            From obtaining a computer science degree from The University of
-            Wisconsin-Madison, I have the skills to create innovative
-            object-oriented projects, as well as cultivate the user experience.
-          </p>
-          <p style={{ fontWeight: 700, color: `#000`, fontSize: `16px` }}>
-            Languages I that I know and use:
-          </p>
-          <div class="frame">
-            <div class="icon">
-              <div>
-                <Img fixed={data.image1.childImageSharp.fixed} />
+      <div class="under">
+        <div class="lay">
+          <div class="outline">
+            <SEO title="Skills" />
+            <div class="paragraph">
+              <p class="skills">
+                <u>Skills</u>
+              </p>
+              <h1>
+                Passionate about writing efficient, modern, and sustainable
+                code.
+              </h1>
+              <p>
+                From obtaining a computer science degree from The University of
+                Wisconsin-Madison, I have the skills to create innovative
+                object-oriented projects, as well as cultivate the user
+                experience.
+              </p>
+              <p style={{ fontWeight: 700, color: `#000`, fontSize: `16px` }}>
+                Languages I that I know and use:
+              </p>
+              <div class="frame">
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image1.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">CSS3</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image2.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">HTML5</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image3.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">JavaScript</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image4.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">Java</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image5.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">Python</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image6.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">Bash</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image7.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">C</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image8.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">PHP</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image9.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">SQL</span>
+                  </div>
+                </div>
               </div>
-              <div>
-                <span id="text">CSS3</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image2.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">HTML5</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image3.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">JavaScript</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image4.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">Java</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image5.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">Python</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image6.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">Bash</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image7.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">C</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image8.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">PHP</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image9.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">SQL</span>
-              </div>
-            </div>
-          </div>
 
-          <p style={{ fontWeight: 700, color: `#000`, fontSize: `16px` }}>
-            Technologies that I know and worked with:
-          </p>
-          <div class="frame">
-            <div class="icon">
-              <div>
-                <Img fixed={data.image10.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">VS Code</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image11.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">React JS</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image12.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">GraphQL</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image13.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">Netlify</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image14.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">Linux</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image15.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">Servers</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image16.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">Git & Github</span>
-              </div>
-            </div>
-            <div class="icon">
-              <div>
-                <Img fixed={data.image17.childImageSharp.fixed} />
-              </div>
-              <div>
-                <span id="text">Docker</span>
+              <p style={{ fontWeight: 700, color: `#000`, fontSize: `16px` }}>
+                Technologies that I know and worked with:
+              </p>
+              <div class="frame">
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image10.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">VS Code</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image11.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">React JS</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image12.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">GraphQL</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image13.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">Netlify</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image14.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">Linux</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image15.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">Servers</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image16.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">Git & Github</span>
+                  </div>
+                </div>
+                <div class="icon">
+                  <div>
+                    <Img fixed={data.image17.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">Docker</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
