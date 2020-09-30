@@ -10,6 +10,7 @@ const Footer = () => {
     <div>
       <div class="foot">
         {" "}
+        <h2>Hit My Line!</h2>
         <div class="contacts">
           For any questions, comments, concerns, and anything else, please
           contact me at:
@@ -63,7 +64,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div class="footer">
+        <div class="footers">
           Built by <b>Marcus Stewart</b> with{" "}
           <a href="https://www.gatsbyjs.org/">Gatsby</a>
         </div>
