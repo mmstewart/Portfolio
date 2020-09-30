@@ -17,6 +17,8 @@
 
 - [Link Hover Animation](https://codepen.io/teeganlincoln/pen/bVNgBR)
 - [Blinking Cursor Animation](https://codepen.io/ArtemGordinsky/pen/GnLBq?js-preprocessor=none)
+- [Skills Icons](https://icons8.com/)
+- [Social Media Icons](https://fontawesome.com/)
 
 ## 💜 Acknowledgments
 
