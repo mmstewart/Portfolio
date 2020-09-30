@@ -186,119 +186,119 @@ export const query = graphql`
   query {
     image1: file(relativePath: { eq: "css3.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image2: file(relativePath: { eq: "html5.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image3: file(relativePath: { eq: "javascript.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image4: file(relativePath: { eq: "java.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image5: file(relativePath: { eq: "python.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image6: file(relativePath: { eq: "bash.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image7: file(relativePath: { eq: "c.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image8: file(relativePath: { eq: "php.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image9: file(relativePath: { eq: "sql.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image10: file(relativePath: { eq: "vscode.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image11: file(relativePath: { eq: "react.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image12: file(relativePath: { eq: "graphql.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image13: file(relativePath: { eq: "netlify.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image14: file(relativePath: { eq: "linux.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image15: file(relativePath: { eq: "servers.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image16: file(relativePath: { eq: "github.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
     }
     image17: file(relativePath: { eq: "docker.png" }) {
       childImageSharp {
-        fixed(width: 49, height: 49) {
+        fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed
         }
       }
