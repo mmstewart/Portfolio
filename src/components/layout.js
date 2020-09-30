@@ -31,7 +31,7 @@ export default function Layout({ children }) {
       <div class="navbar">
         <div>
           <div>
-            <span>+</span>
+            <span>Menu</span>
           </div>
           <div>
             <h2 id="main-color">Marcus Stewart</h2>
@@ -72,7 +72,7 @@ export default function Layout({ children }) {
               </nav>
             </div>
             <div class="contact">
-              Questions? Comments? Concerns? Contact me at:{" "}
+              Questions? Comments? Concerns? Contact me at:
               <a href="mailto:mss.stewart1@gmail.com">mss.stewart1@gmail.com</a>
             </div>
             <div class="socials">
@@ -100,7 +100,7 @@ export default function Layout({ children }) {
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://linkedin.com/marcusmstewart">
                     <FontAwesomeIcon
                       icon={["fab", "linkedin"]}
                       id="hover"
