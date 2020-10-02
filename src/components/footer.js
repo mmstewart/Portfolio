@@ -43,7 +43,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="https://linkedin.com/in/marcusmstewart">
                 <FontAwesomeIcon
                   icon={["fab", "linkedin"]}
                   id="hover"
