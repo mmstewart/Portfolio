@@ -16,30 +16,47 @@ body {
   z-index: 100;
   text-transform: uppercase;
   font-size: 1rem;
-  color: rgb(100, 100, 100);
+  /* color: rgb(100, 100, 100); */
   background: transparent;
   border-bottom: none;
   transition: all 500ms ease-in-out 0s;
+  box-sizing: border-box;
 }
 
 .navbar > div {
-  display: flex;
-  background: #fff;
   -webkit-box-pack: justify;
-  justify-content: space-between;
-  padding: 0.8rem;
+  justify-content: center;
+  padding: 0.1rem;
   transition: padding 500ms ease-in-out 0s;
 }
 
+body.scrolled .navbar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background: rgb(255, 255, 255);
+  transition: all 500ms ease-in-out 0s;
+}
+
 .navbar h2 {
-  font-size: 16px;
+  color: #77001d;
+  text-align: center;
   font-family: "Raleway", sans-serif;
 }
 
-.navbar a {
-  text-decoration: none;
-  text-transform: uppercase;
-  list-style: none !important;
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  font-size: 14px;
+}
+.navbar ul {
+  padding-inline-start: unset !important;
+  margin-block-end: 0em;
+  text-align: center;
+  transition: all 500ms ease-in-out 0s;
 }
 
 /* Sidebar Nav */
@@ -60,10 +77,6 @@ body {
   overflow-y: none;
 }
 
-#main-color {
-  color: #77001d;
-}
-
 /* Marcus Stewart Header */
 .sidebar h2 {
   display: block;
@@ -72,6 +85,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   font-family: "Raleway", sans-serif;
+  color: #77001d;
 }
 
 /* Text Below (Marcus Stewart) Header */
@@ -254,7 +268,7 @@ a:focus {
 
   /* Top Padding on Main Section on Width Change */
   .under {
-    padding-top: 60px;
+    padding-top: 70px;
   }
 
   /* Main Section on Width Change */
@@ -263,5 +277,10 @@ a:focus {
     margin: 3rem auto !important;
     height: 100% !important;
     padding: 0px 10rem !important;
+  }
+}
+@media (max-width: 425px) {
+  .navbar > div > div:nth-child(2) {
+    display: none;
   }
 }

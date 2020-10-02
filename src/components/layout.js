@@ -25,26 +25,35 @@ const ListLink = (props) => (
   </li>
 );
 
+/* Header Hover Animation When Scrolled Down */
+window.addEventListener("scroll", function () {
+  document.body.classList[window.pageYOffset > 5 ? "add" : "remove"](
+    "scrolled"
+  );
+});
+
 export default function Layout({ children }) {
   return (
     <div style={{ outline: `none` }} tabIndex="-1">
       <div class="navbar">
         <div>
           <div>
-            <span>Menu</span>
+            <h2>Marcus Stewart</h2>
           </div>
           <div>
-            <h2 id="main-color">Marcus Stewart</h2>
-          </div>
-          <div>
-            <ListLink to="/">Home</ListLink>
+            <ul>
+              <ListLink to="/">Home</ListLink>
+              <ListLink to="/skills/">Skills</ListLink>
+              <ListLink to="/portfolio/">Portfolio</ListLink>
+              <ListLink to="/resume/">Resume</ListLink>
+            </ul>
           </div>
         </div>
       </div>
       <div class="sidebar" id="left">
         <nav>
           <header>
-            <h2 id="main-color">Marcus Stewart</h2>
+            <h2>Marcus Stewart</h2>
             <div class="sub-sidebar">
               Front-end Geek.
               <br />
@@ -73,6 +82,7 @@ export default function Layout({ children }) {
             </div>
             <div class="contact">
               Questions? Comments? Concerns? Contact me at:
+              <br />
               <a href="mailto:mss.stewart1@gmail.com">mss.stewart1@gmail.com</a>
             </div>
             <div class="socials">
@@ -100,7 +110,7 @@ export default function Layout({ children }) {
                   </a>
                 </li>
                 <li>
-                  <a href="https://linkedin.com/marcusmstewart">
+                  <a href="https://linkedin.com/in/marcusmstewart">
                     <FontAwesomeIcon
                       icon={["fab", "linkedin"]}
                       id="hover"
