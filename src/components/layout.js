@@ -5,6 +5,7 @@ import Footer from "./footer.js";
 
 import "../components/layout.css";
 import "../utils/fontawesome";
+import resume from "../../static/resume.pdf";
 
 /* Active Link Color/Text Decoration */
 const activeStyles = {
@@ -35,7 +36,7 @@ window.addEventListener("scroll", function () {
 export default function Layout({ children }) {
   return (
     <div style={{ outline: `none` }} tabIndex="-1">
-      <div class="navbar">
+      <div className="navbar">
         <div>
           <div>
             <h2>Marcus Stewart</h2>
@@ -50,19 +51,19 @@ export default function Layout({ children }) {
           </div>
         </div>
       </div>
-      <div class="sidebar" id="left">
+      <div className="sidebar" id="left">
         <nav>
           <header>
             <h2>Marcus Stewart</h2>
-            <div class="sub-sidebar">
+            <div className="sub-sidebar">
               Front-end Geek.
               <br />
               Software Developer.
               <br />
-              Film Photography Lover.
+              Enthuastic Leaner.
             </div>
-            <div class="lens">
-              <nav class="effect">
+            <div className="lens">
+              <nav className="effect">
                 <ul>
                   <ListLink to="/">
                     <span id="ln">Home</span>
@@ -74,21 +75,33 @@ export default function Layout({ children }) {
                   <ListLink to="/portfolio/">
                     <span id="ln">Portfolio</span>
                   </ListLink>
-                  <ListLink to="/resume/">
-                    <span id="ln">Resume</span>
+                  <ListLink>
+                    <a
+                      className="res"
+                      href={resume}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span id="ln">Resume</span>
+                    </a>
                   </ListLink>
                 </ul>
               </nav>
             </div>
-            <div class="contact">
+            <div className="contact">
               Questions? Comments? Concerns? Contact me at:
               <br />
               <a href="mailto:mss.stewart1@gmail.com">mss.stewart1@gmail.com</a>
             </div>
-            <div class="socials">
+            <div className="socials">
               <ul>
                 <li>
-                  <a href="mailto:mss.stewart1@gmail.com">
+                  <a
+                    href="mailto:mss.stewart1@gmail.com"
+                    title="Email"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {" "}
                     <FontAwesomeIcon
                       icon={["fas", "envelope"]}
@@ -99,7 +112,12 @@ export default function Layout({ children }) {
                   </a>
                 </li>
                 <li>
-                  <a href="">
+                  <a
+                    href={resume}
+                    title="Resume"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {" "}
                     <FontAwesomeIcon
                       icon={["fas", "file"]}
@@ -110,7 +128,12 @@ export default function Layout({ children }) {
                   </a>
                 </li>
                 <li>
-                  <a href="https://linkedin.com/in/marcusmstewart">
+                  <a
+                    href="https://linkedin.com/in/marcusmstewart"
+                    title="LinkedIn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FontAwesomeIcon
                       icon={["fab", "linkedin"]}
                       id="hover"
@@ -120,7 +143,12 @@ export default function Layout({ children }) {
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/mmstewart/">
+                  <a
+                    href="https://github.com/mmstewart/"
+                    title="Github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FontAwesomeIcon
                       icon={["fab", "github"]}
                       id="hover"
@@ -131,7 +159,7 @@ export default function Layout({ children }) {
                 </li>
               </ul>
             </div>
-            <div class="footer">
+            <div className="footer">
               Built by <b>Marcus Stewart</b> with{" "}
               <a href="https://www.gatsbyjs.org/">Gatsby</a>
             </div>

@@ -9,12 +9,12 @@ import "../styles/skills.css";
 const SkillsPage = ({ data }) => (
   <div>
     <Layout>
-      <div class="under">
-        <div class="lay">
-          <div class="outline">
+      <div className="under">
+        <div className="lay">
+          <div className="outline">
             <SEO title="Skills" />
-            <div class="paragraph">
-              <p class="skills">
+            <div className="paragraph">
+              <p className="skills">
                 <u>Skills</u>
               </p>
               <h1>
@@ -30,8 +30,8 @@ const SkillsPage = ({ data }) => (
               <p style={{ fontWeight: 700, color: `#000`, fontSize: `16px` }}>
                 Languages I that I know and use:
               </p>
-              <div class="frame">
-                <div class="icon">
+              <div className="frame">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image1.childImageSharp.fixed} />
                   </div>
@@ -39,7 +39,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">CSS3</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image2.childImageSharp.fixed} />
                   </div>
@@ -47,7 +47,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">HTML5</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image3.childImageSharp.fixed} />
                   </div>
@@ -55,7 +55,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">JavaScript</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image4.childImageSharp.fixed} />
                   </div>
@@ -63,7 +63,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">Java</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image5.childImageSharp.fixed} />
                   </div>
@@ -71,7 +71,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">Python</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image6.childImageSharp.fixed} />
                   </div>
@@ -79,7 +79,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">Bash</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image7.childImageSharp.fixed} />
                   </div>
@@ -87,7 +87,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">C</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image8.childImageSharp.fixed} />
                   </div>
@@ -95,7 +95,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">PHP</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image9.childImageSharp.fixed} />
                   </div>
@@ -108,8 +108,8 @@ const SkillsPage = ({ data }) => (
               <p style={{ fontWeight: 700, color: `#000`, fontSize: `16px` }}>
                 Technologies that I know and worked with:
               </p>
-              <div class="frame">
-                <div class="icon">
+              <div className="frame">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image10.childImageSharp.fixed} />
                   </div>
@@ -117,7 +117,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">VS Code</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image11.childImageSharp.fixed} />
                   </div>
@@ -125,7 +125,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">React JS</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image12.childImageSharp.fixed} />
                   </div>
@@ -133,7 +133,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">GraphQL</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image13.childImageSharp.fixed} />
                   </div>
@@ -141,7 +141,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">Netlify</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image14.childImageSharp.fixed} />
                   </div>
@@ -149,7 +149,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">Linux</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image15.childImageSharp.fixed} />
                   </div>
@@ -157,7 +157,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">Servers</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image16.childImageSharp.fixed} />
                   </div>
@@ -165,7 +165,7 @@ const SkillsPage = ({ data }) => (
                     <span id="text">Git & Github</span>
                   </div>
                 </div>
-                <div class="icon">
+                <div className="icon">
                   <div>
                     <Img fixed={data.image17.childImageSharp.fixed} />
                   </div>

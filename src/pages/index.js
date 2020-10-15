@@ -8,26 +8,26 @@ import "../styles/index.css";
 const IndexPage = () => (
   <div>
     <Layout>
-      <div class="under">
-        <div class="lay">
-          <div class="outline">
+      <div className="under">
+        <div className="lay">
+          <div className="outline">
             <SEO title="Home" />
-            <div class="paragraph">
-              <p class="intro">
+            <div className="paragraph">
+              <p className="intro">
                 <u>Hey, I'm Marcus</u>
-                <span class="blinking-cursor">|</span>
+                <span clasName="blinking-cursor">|</span>
               </p>
               <h1>
                 I am a web and software developer proficient at creating web
                 applications and solving challenging solutions.
               </h1>
               <p>
-                You can catch me working with front-end frameworks to create
-                front-end websites and projects. I also have experience in some
-                other object-oriented programs such as Java, Python, C as well
-                as networking and servers. Continuous learner that loves to
-                learn new languages and technology that help develop my skills
-                and challenge my growth as a developer.
+                You can catch me working with the latest front-end frameworks to
+                create websites and projects. I also have experience in other
+                object-oriented programning languages such as Java, Python, C as
+                well as networking and servers. I am a continuous learner that
+                loves to learn new languages and technologies that help develop
+                my skills and challenge my growth as a developer.
               </p>
             </div>
           </div>

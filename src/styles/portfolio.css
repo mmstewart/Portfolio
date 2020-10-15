@@ -1,0 +1,16 @@
+.desc {
+  text-align: left;
+}
+
+div {
+  display: block;
+}
+
+.col-image {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.imgs {
+  vertical-align: middle;
+}

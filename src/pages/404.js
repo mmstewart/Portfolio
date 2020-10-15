@@ -5,9 +5,9 @@ import SEO from "../components/seo";
 
 const NotFoundPage = () => (
   <Layout>
-    <div class="under">
-      <div class="lay">
-        <div class="outline">
+    <div className="under">
+      <div className="lay">
+        <div className="outline">
           <SEO title="404: Page Not Found" />
           <p style={{ fontSize: `60px`, marginBlockEnd: `0em`, color: `#000` }}>
             404 ERROR
