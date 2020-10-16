@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import resume from "../../static/resume.pdf";
 
 import "./footer.css";
 import "../components/layout.css";
@@ -21,7 +22,12 @@ const Footer = () => {
         <div class="social">
           <ul>
             <li>
-              <a href="mailto:mss.stewart1@gmail.com">
+              <a
+                href="mailto:mss.stewart1@gmail.com"
+                title="Email"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {" "}
                 <FontAwesomeIcon
                   icon={["fas", "envelope"]}
@@ -32,7 +38,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href={resume}
+                title="Resume"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {" "}
                 <FontAwesomeIcon
                   icon={["fas", "file"]}
@@ -43,7 +54,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com/in/marcusmstewart">
+              <a
+                href="https://linkedin.com/in/marcusmstewart"
+                title="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon
                   icon={["fab", "linkedin"]}
                   id="hover"
@@ -53,7 +69,12 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://github.com/mmstewart/">
+              <a
+                href="https://github.com/mmstewart/"
+                title="Github"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon
                   icon={["fab", "github"]}
                   id="hover"

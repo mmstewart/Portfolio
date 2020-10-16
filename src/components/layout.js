@@ -43,10 +43,18 @@ export default function Layout({ children }) {
           </div>
           <div>
             <ul>
-              <ListLink to="/">Home</ListLink>
-              <ListLink to="/skills/">Skills</ListLink>
-              <ListLink to="/portfolio/">Portfolio</ListLink>
-              <ListLink to="/resume/">Resume</ListLink>
+              <ListLink to="/">
+                <span id="nav-ln">Home</span>
+              </ListLink>
+              <ListLink to="/skills/">
+                <span id="nav-ln">Skills</span>
+              </ListLink>
+              <ListLink to="/portfolio/">
+                <span id="nav-ln">Portfolio</span>
+              </ListLink>
+              <ListLink to="/resume/">
+                <span id="nav-ln">Resume</span>
+              </ListLink>
             </ul>
           </div>
         </div>

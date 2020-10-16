@@ -15,7 +15,7 @@ const IndexPage = () => (
             <div className="paragraph">
               <p className="intro">
                 <u>Hey, I'm Marcus</u>
-                <span clasName="blinking-cursor">|</span>
+                <span className="blinking-cursor">|</span>
               </p>
               <h1>
                 I am a web and software developer proficient at creating web

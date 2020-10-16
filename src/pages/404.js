@@ -9,7 +9,7 @@ const NotFoundPage = () => (
       <div className="lay">
         <div className="outline">
           <SEO title="404: Page Not Found" />
-          <p style={{ fontSize: `60px`, marginBlockEnd: `0em`, color: `#000` }}>
+          <p style={{ fontSize: `55px`, marginBlockEnd: `0em`, color: `#000` }}>
             404 ERROR
           </p>
           <p
@@ -22,7 +22,7 @@ const NotFoundPage = () => (
           >
             SORRY, THIS PAGE DOES NOT EXIST.
           </p>
-          <p>
+          <p style={{ marginBlockEnd: "8.4em" }}>
             Maybe the page you're looking for is somewhere else...
             <br />
             You can always go back to the <a href="/">homepage</a>.
