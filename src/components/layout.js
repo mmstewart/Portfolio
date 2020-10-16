@@ -26,12 +26,14 @@ const ListLink = (props) => (
   </li>
 );
 
-/* Header Hover Animation When Scrolled Down */
-window.addEventListener("scroll", function () {
-  document.body.classList[window.pageYOffset > 5 ? "add" : "remove"](
-    "scrolled"
-  );
-});
+if (typeof window !== `undefined`) {
+  /* Header Hover Animation When Scrolled Down */
+  window.addEventListener("scroll", function () {
+    document.body.classList[window.pageYOffset > 5 ? "add" : "remove"](
+      "scrolled"
+    );
+  });
+}
 
 export default function Layout({ children }) {
   return (
