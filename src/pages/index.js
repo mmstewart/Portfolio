@@ -29,6 +29,16 @@ const IndexPage = () => (
                 loves to learn new languages and technologies that help develop
                 my skills and challenge my growth as a developer.
               </p>
+              <div className="gap">
+                <a
+                  href="mailto:mss.stewart1@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="ind-ln"
+                >
+                  Contact me
+                </a>
+              </div>
             </div>
           </div>
         </div>

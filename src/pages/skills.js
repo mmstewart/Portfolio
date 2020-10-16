@@ -173,6 +173,14 @@ const SkillsPage = ({ data }) => (
                     <span id="text">Docker</span>
                   </div>
                 </div>
+                <div className="icon">
+                  <div>
+                    <Img fixed={data.image18.childImageSharp.fixed} />
+                  </div>
+                  <div>
+                    <span id="text">Gatsby JS</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -297,6 +305,13 @@ export const query = graphql`
       }
     }
     image17: file(relativePath: { eq: "docker.png" }) {
+      childImageSharp {
+        fixed(width: 48, height: 48) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    image18: file(relativePath: { eq: "gatsby.png" }) {
       childImageSharp {
         fixed(width: 48, height: 48) {
           ...GatsbyImageSharpFixed

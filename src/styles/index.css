@@ -10,6 +10,7 @@ div {
   padding: 0px 10rem;
   margin: 2rem 0px 2rem;
   opacity: 1;
+  transition: opacity 0.5s ease-in 0s;
 }
 
 .paragraph {
@@ -55,6 +56,30 @@ h1 {
   -ms-animation: 1s blink step-end infinite;
   -o-animation: 1s blink step-end infinite;
   animation: 1s blink step-end infinite;
+}
+
+.outline .gap:nth-child(4) {
+  margin: 3rem 0px;
+}
+
+.ind-ln:nth-child(1) {
+  border: 2px solid #77001d;
+  transition: all 0.8s ease-in-out 0s;
+}
+.ind-ln:nth-child(1):hover {
+  transition: all 0.8s ease-in-out 0s;
+  background-color: #77001d;
+  color: #fff;
+}
+.ind-ln {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  transition: all 300ms ease-in-out 0s;
 }
 
 @keyframes blink {
