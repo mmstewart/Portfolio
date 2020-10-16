@@ -18,7 +18,7 @@ const PortfolioPage = ({ data }) => (
                 <u>Portfolio</u>
               </p>
               <h1>Projects</h1>
-              <p>
+              <p className="note">
                 {" "}
                 A select few projects that I have created, from personal
                 websites to web applications and software tools.
@@ -26,9 +26,7 @@ const PortfolioPage = ({ data }) => (
               <div className="row">
                 <div className="col-l">
                   <div className="desc">
-                    <h3>
-                      <u>Supermicro Ultra Builds Website</u>
-                    </h3>
+                    <h3>Supermicro Ultra Builds Website</h3>
                     <div className="bubbles-l">
                       <span id="bubbles">Gatsby.js</span>
                       <span id="bubbles">GraphQL</span>
@@ -36,11 +34,11 @@ const PortfolioPage = ({ data }) => (
                       <span id="bubbles">CSS3</span>
                     </div>
                     <div>
-                      <p>
+                      <p className="desc">
                         A website created to help the production team of Equus
                         build servers with Supermicro components with no errors.
                       </p>
-                      <p>
+                      <p className="notice">
                         Cannot link the website or source code of the project
                         under company terms.
                       </p>
@@ -61,31 +59,29 @@ const PortfolioPage = ({ data }) => (
               <div className="row">
                 <div className="col-l">
                   <div className="desc">
-                    <h3>
-                      <u>Portfolio Website</u>
-                    </h3>
+                    <h3>Portfolio Website</h3>
                     <div className="bubbles-l">
                       <span id="bubbles">Gatsby.js</span>
                       <span id="bubbles">GraphQL</span>
                       <span id="bubbles">CSS3</span>
                     </div>
                     <div>
-                      <p>
+                      <p className="desc">
                         The website you are currently looking at! Contains all
-                        the skills I know, projects I created, and expertise as
-                        a software developer.
+                        the skills I know, some of the projects I created, and
+                        expertise as a software developer.
                       </p>
                     </div>
                     <a
-                      className="desc-links"
-                      href="https://marcusstew.art"
+                      className="desc-link1"
+                      href="https://marcusstewart.me"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       View Site
                     </a>
                     <a
-                      className="desc-links"
+                      className="desc-link2"
                       href="https://github.com/mmstewart/Portfolio"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -96,7 +92,11 @@ const PortfolioPage = ({ data }) => (
                 </div>
                 <div className="col-r">
                   <div className="col-image">
-                    <a>
+                    <a
+                      href="https://marcusstewart.me"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <div>
                         <Img
                           className="imgs"
@@ -110,15 +110,13 @@ const PortfolioPage = ({ data }) => (
               <div className="row">
                 <div className="col-l">
                   <div className="desc">
-                    <h3>
-                      <u>Node-RED Temperature Monitoring Flow</u>
-                    </h3>
+                    <h3>Node-RED Temperature Monitoring Flow</h3>
                     <div className="bubbles-l">
                       <span id="bubbles">Bash</span>
                       <span id="bubbles">Node-RED</span>
                     </div>
                     <div>
-                      <p>
+                      <p className="desc">
                         Created a server laboratory temperature-monitoring
                         application to power off the servers once the
                         temperature of the laboratory passes the temperature
@@ -126,7 +124,7 @@ const PortfolioPage = ({ data }) => (
                       </p>
                     </div>
                     <a
-                      className="desc-links"
+                      className="desc-link2"
                       href="https://github.com/mmstewart/Node-RED-Temperature-Monitoring-Flow"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -137,7 +135,11 @@ const PortfolioPage = ({ data }) => (
                 </div>
                 <div className="col-r">
                   <div className="col-image">
-                    <a>
+                    <a
+                      href="https://github.com/mmstewart/Node-RED-Temperature-Monitoring-Flow"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <div>
                         <Img
                           className="imgs"
@@ -151,20 +153,18 @@ const PortfolioPage = ({ data }) => (
               <div className="row">
                 <div className="col-l">
                   <div className="desc">
-                    <h3>
-                      <u>Commvault Hardware Monitoring Service</u>
-                    </h3>
+                    <h3>Commvault Hardware Monitoring Service</h3>
                     <div className="bubbles-l">
                       <span id="bubbles">Bash</span>
                     </div>
                     <div>
-                      <p>
+                      <p className="desc">
                         A server monitoring utility for capturing hardware
                         status and fault events. This tool allowed clients to
                         view and notifies of failures from physical disk,
                         virtual disks, fans, and power distribution units.
                       </p>
-                      <p>
+                      <p className="notice">
                         Cannot link the website or source code of the project
                         under company terms.
                       </p>
@@ -173,14 +173,12 @@ const PortfolioPage = ({ data }) => (
                 </div>
                 <div className="col-r">
                   <div className="col-image">
-                    <a>
-                      <div>
-                        <Img
-                          className="imgs"
-                          fixed={data.image4.childImageSharp.fixed}
-                        />
-                      </div>
-                    </a>
+                    <div>
+                      <Img
+                        className="imgs"
+                        fixed={data.image4.childImageSharp.fixed}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

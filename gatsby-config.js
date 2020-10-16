@@ -24,7 +24,6 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/favicon-16x16.png`, // This path is relative to the root of the site.
       },
       resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
@@ -34,6 +33,22 @@ module.exports = {
             variants: [`400`, `500`, `700`],
           },
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/images/dev.png",
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          yandex: false,
+          windows: true,
+        },
       },
     },
   ],

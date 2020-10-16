@@ -36,6 +36,16 @@ body {
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
+  transition: all 300ms ease-in-out 0s;
+}
+
+.icon {
+  transition: transform 0.5s; /* Animation */
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
 
 #text {

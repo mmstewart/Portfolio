@@ -1,5 +1,19 @@
-.desc {
-  text-align: left;
+.row {
+  display: flex;
+  margin: 2rem 0px;
+}
+
+.col-l {
+  flex-basis: 65%;
+}
+
+.col-r {
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0px 1.5rem;
 }
 
 div {
@@ -13,4 +27,92 @@ div {
 
 .imgs {
   vertical-align: middle;
+}
+
+h3 {
+  text-decoration: underline #77001d;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+#bubbles {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  background: #77001d;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  padding: 0.35rem 0.75rem;
+  margin: 0.4rem 0.3rem 0.2rem 0px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2px,
+    rgba(0, 0, 0, 0.19) 0px 2px 6px 0px;
+  border: 1px solid rgb(105, 105, 105);
+  transition: all 0.6s ease-in-out 0s;
+  transition: transform 0.6s; /* Animation */
+}
+#bubbles:hover {
+  transform: scale(1.1);
+}
+
+.desc-link1 {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  margin-right: 1.5rem;
+  background: #77001d;
+  border: 1px solid #77001d;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2px,
+    rgba(0, 0, 0, 0.19) 0px 2px 6px 0px;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s ease-in-out 0s;
+  text-decoration: none;
+}
+
+.desc-link1:hover {
+  background: rgb(221, 221, 221);
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.desc-link2 {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 3px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  margin-right: 1.5rem;
+  border: 1px solid#77001d;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 2px,
+    rgba(0, 0, 0, 0.19) 0px 2px 6px 0px;
+  text-decoration: none;
+  background: transparent;
+  color: #000;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.desc-link2:hover {
+  background: #77001d;
+  color: #fff;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.note {
+  margin-bottom: 8em;
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+  padding-right: 1em;
+}
+
+.desc {
+  margin-bottom: 2em;
+}
+
+.notice {
+  color: #77001d;
 }

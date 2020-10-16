@@ -9,17 +9,17 @@ import "../utils/fontawesome";
 const Footer = () => {
   return (
     <div>
-      <div class="foot">
+      <div className="foot">
         {" "}
         <h2>Hit My Line!</h2>
-        <div class="contacts">
+        <div className="contacts">
           For any questions, comments, concerns, and anything else, please
           contact me at:
           <br />
           <br />
           <a href="mailto:mss.stewart1@gmail.com">mss.stewart1@gmail.com</a>
         </div>
-        <div class="social">
+        <div className="social">
           <ul>
             <li>
               <a
@@ -85,7 +85,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div class="footers">
+        <div className="footers">
           Built by <b>Marcus Stewart</b> with{" "}
           <a href="https://www.gatsbyjs.org/">Gatsby</a>
         </div>
