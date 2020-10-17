@@ -13,7 +13,7 @@ const PortfolioPage = ({ data }) => (
         <div className="lay">
           <div className="outline">
             <SEO title="Home" />
-            <div className="paragraph">
+            <div className="paragraph2">
               <p className="intro">
                 <u>Portfolio</u>
               </p>
@@ -192,30 +192,30 @@ const PortfolioPage = ({ data }) => (
 
 export const query = graphql`
   query {
-    image1: file(relativePath: { eq: "css3.png" }) {
+    image1: file(relativePath: { eq: "1.PNG" }) {
       childImageSharp {
-        fixed(width: 48, height: 48) {
+        fixed(width: 540, height: 282) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    image2: file(relativePath: { eq: "html5.png" }) {
+    image2: file(relativePath: { eq: "2.PNG" }) {
       childImageSharp {
-        fixed(width: 48, height: 48) {
+        fixed(width: 540, height: 282) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    image3: file(relativePath: { eq: "javascript.png" }) {
+    image3: file(relativePath: { eq: "3.PNG" }) {
       childImageSharp {
-        fixed(width: 48, height: 48) {
+        fixed(width: 540, height: 282) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    image4: file(relativePath: { eq: "java.png" }) {
+    image4: file(relativePath: { eq: "4.PNG" }) {
       childImageSharp {
-        fixed(width: 48, height: 48) {
+        fixed(width: 540, height: 282) {
           ...GatsbyImageSharpFixed
         }
       }

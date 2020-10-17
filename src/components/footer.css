@@ -9,7 +9,8 @@
 }
 
 .foot h2 {
-  font-size: 28px;
+  font-size: calc(22px + 6 * ((100vw - 330px) / 438));
+  transition: all 300ms ease-in-out 0s;
   font-family: "Raleway", sans-serif;
   color: #77001d;
 }
@@ -18,7 +19,8 @@
   display: block;
   color: rgb(100, 100, 100);
   letter-spacing: 1.1px;
-  font-size: calc(14px + 2 * ((100vw - 330px) / 438));
+  font-size: calc(14px + 4 * ((100vw - 330px) / 438));
+  transition: all 300ms ease-in-out 0s;
   font-family: "Raleway", sans-serif;
   text-align: center;
   margin-block-start: 1em;
@@ -44,7 +46,7 @@
 
 .footers {
   padding-top: 10px;
-  font-size: calc(14px + 2 * ((100vw - 330px) / 438));
+  font-size: calc(12px + 4 * ((100vw - 330px) / 438));
   font-family: "Raleway", sans-serif;
   color: rgb(100, 100, 100);
   letter-spacing: 1.05px;

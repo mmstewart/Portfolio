@@ -27,7 +27,10 @@ const SkillsPage = ({ data }) => (
                 object-oriented projects, as well as cultivate the user
                 experience.
               </p>
-              <p style={{ fontWeight: 700, color: `#000`, fontSize: `16px` }}>
+              <p
+                className="know"
+                style={{ fontWeight: 700, color: `#000`, fontSize: `16px` }}
+              >
                 Languages I that I know and use:
               </p>
               <div className="frame">
@@ -105,7 +108,10 @@ const SkillsPage = ({ data }) => (
                 </div>
               </div>
 
-              <p style={{ fontWeight: 700, color: `#000`, fontSize: `16px` }}>
+              <p
+                className="know"
+                style={{ fontWeight: 700, color: `#000`, fontSize: `16px` }}
+              >
                 Technologies that I know and worked with:
               </p>
               <div className="frame">

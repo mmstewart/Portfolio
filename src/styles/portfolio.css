@@ -1,14 +1,15 @@
 .row {
   display: flex;
-  margin: 2rem 0px;
+  margin: 4rem 0px;
 }
 
 .col-l {
-  flex-basis: 65%;
+  flex-basis: 60%;
+  max-width: 1028px;
 }
 
 .col-r {
-  flex-basis: 35%;
+  flex-basis: 40%;
   display: flex;
   flex-direction: column;
   -webkit-box-pack: center;
@@ -16,17 +17,12 @@
   padding: 0px 1.5rem;
 }
 
+.paragraph2 {
+  max-width: 1028px;
+}
+
 div {
   display: block;
-}
-
-.col-image {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.imgs {
-  vertical-align: middle;
 }
 
 h3 {
@@ -73,7 +69,16 @@ h3 {
 
 .desc-link1:hover {
   background: rgb(221, 221, 221);
-  transition: all 0.5s ease-in-out 0s;
+  transition: all 0.75s ease-in-out 0s;
+}
+
+.imgs {
+  box-shadow: 0 15px 35px -7px #000;
+  transition: all 0.75s ease-in-out 0s;
+  transition: transform 0.75s;
+}
+.imgs:hover {
+  transform: scale(1.1);
 }
 
 .desc-link2 {

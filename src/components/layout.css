@@ -2,11 +2,25 @@ div {
   display: block;
 }
 
+.outline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-box-pack: center;
+  padding: 0px 5rem;
+  margin: 2rem 0px 8rem;
+
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
 body {
   margin: 0;
   padding: 0;
   background-color: rgb(221, 221, 221);
-  transition: all 300ms ease-in-out 0s;
 }
 
 .navbar {
@@ -265,6 +279,28 @@ a:focus {
   font-family: "Raleway", sans-serif;
 }
 
+@media (max-width: 1024px) and (min-width: 769px) {
+  .intro u {
+    font-size: calc(22px + 4 * ((100vw - 320px) / (448)));
+  }
+
+  .intro .blinking-cursor {
+    font-size: calc(22px + 4 * ((100vw - 320px) / (448)));
+  }
+
+  .paragraph h1 {
+    font-size: calc(30px + 6 * ((100vw - 768px) / 256));
+  }
+
+  .paragraph p {
+    font-size: calc(17px + 4 * ((100vw - 320px) / (448)));
+  }
+
+  .ind-ln {
+    font-size: calc(11px + 4 * ((100vw - 320px) / (448)));
+  }
+}
+
 @media (min-width: 769px) {
   .navbar {
     display: none;
@@ -277,8 +313,21 @@ a:focus {
 }
 
 @media (max-width: 768px) {
+  .frame {
+    -webkit-box-pack: center !important;
+    justify-content: center !important;
+  }
+
+  .know {
+    font-size: calc(12px + 4 * ((100vw - 320px) / (448))) !important;
+  }
+
   .sidebar {
     display: none;
+  }
+
+  .paragraph {
+    max-width: none !important;
   }
 
   /* Top Padding on Main Section on Width Change */
@@ -289,9 +338,30 @@ a:focus {
   /* Main Section on Width Change */
   .outline {
     text-align: center;
-    margin: 3rem auto !important;
-    height: 100% !important;
-    padding: 0px 10rem !important;
+    margin: 5rem auto;
+    height: 100%;
+    padding: 0px 2rem;
+  }
+
+  .intro u {
+    font-size: calc(20px + 4 * ((100vw - 320px) / (448)));
+  }
+
+  .intro .blinking-cursor {
+    font-size: calc(20px + 4 * ((100vw - 320px) / (448)));
+  }
+
+  .paragraph h1 {
+    font-size: calc(28px + 4 * ((100vw - 320px) / (448)));
+  }
+
+  .paragraph p {
+    font-size: calc(16px + 4 * ((100vw - 320px) / (448)));
+    padding-right: unset !important;
+  }
+
+  .ind-ln {
+    font-size: calc(10px + 4 * ((100vw - 320px) / (448)));
   }
 }
 @media (max-width: 425px) {
