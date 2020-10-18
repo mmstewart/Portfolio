@@ -405,19 +405,17 @@ a:focus {
     font-size: calc(14px + 4 * ((100vw - 320px) / (448))) !important;
   }
 
+  /* Portfolio Page Text Resize */
   .desc h3 {
     font-size: calc(18px + 2 * ((100vw - 320px) / (448))) !important;
     padding-top: 30px;
   }
-
   #bubbles {
     font-size: calc(10px + 2 * ((100vw - 320px) / (448))) !important;
   }
-
   .desc2 {
     font-size: calc(16px + 2 * ((100vw - 320px) / (448))) !important;
   }
-
   .desc-link1,
   .desc-link2 {
     font-size: calc(10px + 2 * ((100vw - 320px) / (448))) !important;
