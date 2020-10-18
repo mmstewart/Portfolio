@@ -326,7 +326,8 @@ a:focus {
     display: none;
   }
 
-  .paragraph {
+  .paragraph,
+  .paragraph2 {
     max-width: none !important;
   }
 
@@ -343,7 +344,8 @@ a:focus {
     padding: 0px 2rem;
   }
 
-  .intro u {
+  .intro u,
+  .skills u {
     font-size: calc(20px + 4 * ((100vw - 320px) / (448)));
   }
 
@@ -351,11 +353,13 @@ a:focus {
     font-size: calc(20px + 4 * ((100vw - 320px) / (448)));
   }
 
-  .paragraph h1 {
+  .paragraph h1,
+  .paragraph2 h1 {
     font-size: calc(28px + 4 * ((100vw - 320px) / (448)));
   }
 
-  .paragraph p {
+  .paragraph p,
+  .paragraph2 p {
     font-size: calc(16px + 4 * ((100vw - 320px) / (448)));
     padding-right: unset !important;
   }
@@ -363,9 +367,61 @@ a:focus {
   .ind-ln {
     font-size: calc(10px + 4 * ((100vw - 320px) / (448)));
   }
-}
-@media (max-width: 425px) {
-  .navbar > div > div:nth-child(2) {
-    display: none;
+
+  .paragraph2 .note {
+    font-size: calc(16px + 4 * ((100vw - 320px) / (448)));
+    padding-right: unset !important;
+  }
+
+  .row {
+    flex-flow: column-reverse wrap;
+  }
+
+  .col-r {
+    flex-basis: 100% !important;
+    width: 100%;
+    padding: 0px !important;
+  }
+
+  .navbar li {
+    font-size: calc(12px + 4 * ((100vw - 320px) / (448)));
+  }
+
+  .navbar h2 {
+    font-size: calc(22px + 4 * ((100vw - 320px) / (448)));
+  }
+
+  /* Error Page Text Resize */
+  .outline p {
+    padding-right: unset;
+  }
+  .outline .one {
+    font-size: calc(49px + 6 * ((100vw - 320px) / (448))) !important;
+  }
+  .outline .two {
+    font-size: calc(29px + 6 * ((100vw - 320px) / (448))) !important;
+  }
+  .outline .three {
+    font-size: calc(14px + 4 * ((100vw - 320px) / (448))) !important;
+  }
+
+  .desc h3 {
+    font-size: calc(18px + 2 * ((100vw - 320px) / (448))) !important;
+    padding-top: 30px;
+  }
+
+  #bubbles {
+    font-size: calc(10px + 2 * ((100vw - 320px) / (448))) !important;
+  }
+
+  .desc2 {
+    font-size: calc(16px + 2 * ((100vw - 320px) / (448))) !important;
+  }
+
+  .desc-link1,
+  .desc-link2 {
+    font-size: calc(10px + 2 * ((100vw - 320px) / (448))) !important;
+    margin-right: unset !important;
+    display: block;
   }
 }
