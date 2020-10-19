@@ -1,7 +1,16 @@
+/* Block display on all div */
 div {
   display: block;
 }
 
+/* Background color of background */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(221, 221, 221);
+}
+
+/* Outline of all pages */
 .outline {
   display: flex;
   flex-direction: column;
@@ -17,12 +26,7 @@ div {
   animation: fadein 1s;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(221, 221, 221);
-}
-
+/* Navigation bar on mobile/tablet view */
 .navbar {
   position: fixed;
   top: 0px;
@@ -35,21 +39,7 @@ body {
   box-sizing: border-box;
 }
 
-ul .res {
-  color: rgb(100, 100, 100);
-}
-ul .res:hover,
-ul .res:focus {
-  color: rgb(100, 100, 100);
-}
-
-.navbar > div {
-  -webkit-box-pack: justify;
-  justify-content: center;
-  padding: 0.1rem;
-  transition: padding 500ms ease-in-out 0s;
-}
-
+/* Navbar background change on scroll */
 body.scrolled .navbar {
   position: fixed;
   top: 0px;
@@ -60,12 +50,22 @@ body.scrolled .navbar {
   transition: all 500ms ease-in-out 0s;
 }
 
+/* Justify navbar to be center */
+.navbar > div {
+  -webkit-box-pack: justify;
+  justify-content: center;
+  padding: 0.1rem;
+  transition: padding 500ms ease-in-out 0s;
+}
+
+/* Marcus Stewart title on navbar */
 .navbar h2 {
   color: #77001d;
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
 
+/* Navbar link styling */
 .navbar li {
   list-style: none;
   display: inline-block;
@@ -77,18 +77,18 @@ body.scrolled .navbar {
   text-align: center;
 }
 
+/* Navbar link fade on hover */
 #nav-ln {
   color: rgb(100, 100, 100);
   transition: all 1s ease-in-out 0s;
 }
-
 #nav-ln:hover,
 #nav-ln:focus {
   color: #77001d;
   transition: all 1s ease-in-out 0s;
 }
 
-/* Sidebar Nav */
+/* Sidebar nav */
 .sidebar {
   position: fixed;
   display: flex;
@@ -106,7 +106,7 @@ body.scrolled .navbar {
   overflow-y: none;
 }
 
-/* Marcus Stewart Header */
+/* Marcus Stewart header */
 .sidebar h2 {
   display: block;
   padding: 10px 20px;
@@ -141,7 +141,16 @@ body.scrolled .navbar {
   font-family: "Raleway", sans-serif;
 }
 
-/* Link Hover Animation */
+/* Resume link on sidebar/Hover transition */
+ul .res {
+  color: rgb(100, 100, 100);
+}
+ul .res:hover,
+ul .res:focus {
+  color: rgb(100, 100, 100);
+}
+
+/* Link Hover Animation (Snapshot frame around text) */
 .lens .effect li {
   padding: 10px 20px;
   position: relative;
@@ -237,7 +246,7 @@ body.scrolled .navbar {
   padding-bottom: 5px;
 }
 
-/* Links */
+/* Links/On hover links in sidebar */
 a {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
@@ -251,11 +260,11 @@ a:focus {
   transition: all 1s ease-in-out;
 }
 
+/* Socials Bar in sidebar */
 .socials ul {
   padding: 10px;
   display: flex;
 }
-
 .socials ul li {
   list-style: none;
   margin: 0 15px;
@@ -270,7 +279,7 @@ a:focus {
   transition: all 300ms ease-in-out 0s;
 }
 
-/* Footer in Sidebar */
+/* Footer (Who it was created by) in sidebar */
 .footer {
   display: inline-block;
   padding: 6px 20px;
@@ -279,28 +288,35 @@ a:focus {
   font-family: "Raleway", sans-serif;
 }
 
+/* Text resize change on width before mobile/tablet */
 @media (max-width: 1024px) and (min-width: 769px) {
+  /* Main title on all pages */
   .intro u {
     font-size: calc(22px + 4 * ((100vw - 320px) / (448)));
   }
 
+  /* Blinking cursor on index page */
   .intro .blinking-cursor {
     font-size: calc(22px + 4 * ((100vw - 320px) / (448)));
   }
 
+  /* First description on all pages */
   .paragraph h1 {
     font-size: calc(30px + 6 * ((100vw - 768px) / 256));
   }
 
+  /* Second description on all pages */
   .paragraph p {
     font-size: calc(17px + 4 * ((100vw - 320px) / (448)));
   }
 
+  /* Contact me button on index page */
   .ind-ln {
     font-size: calc(11px + 4 * ((100vw - 320px) / (448)));
   }
 }
 
+/* Navbar doesn't appear on desktop/only sidebar */
 @media (min-width: 769px) {
   .navbar {
     display: none;
@@ -313,19 +329,23 @@ a:focus {
 }
 
 @media (max-width: 768px) {
+  /* Frame of icons on skill page */
   .frame {
     -webkit-box-pack: center !important;
     justify-content: center !important;
   }
 
+  /* Technologies I know from skills page */
   .know {
     font-size: calc(12px + 4 * ((100vw - 320px) / (448))) !important;
   }
 
+  /* No side bar on mobile/tablet */
   .sidebar {
     display: none;
   }
 
+  /* Title and description of all pages */
   .paragraph,
   .paragraph2 {
     max-width: none !important;
@@ -344,49 +364,39 @@ a:focus {
     padding: 0px 2rem;
   }
 
+  /* Title of skills and intro title */
   .intro u,
   .skills u {
     font-size: calc(20px + 4 * ((100vw - 320px) / (448)));
   }
 
+  /* Blinking cursor from index page */
   .intro .blinking-cursor {
     font-size: calc(20px + 4 * ((100vw - 320px) / (448)));
   }
 
+  /* First desc of all pages */
   .paragraph h1,
   .paragraph2 h1 {
     font-size: calc(28px + 4 * ((100vw - 320px) / (448)));
   }
 
+  /* Second desc of all pages */
   .paragraph p,
   .paragraph2 p {
     font-size: calc(16px + 4 * ((100vw - 320px) / (448)));
     padding-right: unset !important;
   }
 
+  /* Contact me button */
   .ind-ln {
     font-size: calc(10px + 4 * ((100vw - 320px) / (448)));
   }
 
-  .paragraph2 .note {
-    font-size: calc(16px + 4 * ((100vw - 320px) / (448)));
-    padding-right: unset !important;
-  }
-
-  .row {
-    flex-flow: column-reverse wrap;
-  }
-
-  .col-r {
-    flex-basis: 100% !important;
-    width: 100%;
-    padding: 0px !important;
-  }
-
+  /* Navbar */
   .navbar li {
     font-size: calc(12px + 4 * ((100vw - 320px) / (448)));
   }
-
   .navbar h2 {
     font-size: calc(22px + 4 * ((100vw - 320px) / (448)));
   }
@@ -406,6 +416,13 @@ a:focus {
   }
 
   /* Portfolio Page Text Resize */
+  .paragraph2 .note {
+    font-size: calc(16px + 4 * ((100vw - 320px) / (448)));
+    padding-right: unset !important;
+  }
+  .row {
+    flex-flow: column-reverse wrap;
+  }
   .desc h3 {
     font-size: calc(18px + 2 * ((100vw - 320px) / (448))) !important;
     padding-top: 30px;
@@ -421,5 +438,10 @@ a:focus {
     font-size: calc(10px + 2 * ((100vw - 320px) / (448))) !important;
     margin-right: unset !important;
     display: block;
+  }
+  .col-r {
+    flex-basis: 100% !important;
+    width: 100%;
+    padding: 0px !important;
   }
 }

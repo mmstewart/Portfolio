@@ -1,3 +1,4 @@
+/* Footer */
 .foot {
   bottom: 0;
   width: 100%;
@@ -8,6 +9,7 @@
   transition: all 300ms ease-in-out 0s;
 }
 
+/* Main title of footer */
 .foot h2 {
   font-size: calc(22px + 6 * ((100vw - 330px) / 438));
   transition: all 300ms ease-in-out 0s;
@@ -15,6 +17,7 @@
   color: #77001d;
 }
 
+/* Email/Contact Segment of Footer */
 .foot .contacts {
   display: block;
   color: rgb(100, 100, 100);
@@ -28,22 +31,24 @@
   margin: 1rem 0px 2rem;
 }
 
+/* Add underline to email in footer */
 .foot .contacts a {
   text-decoration: underline;
 }
 
+/* Display for icons in footer */
 .social ul {
   display: flex;
   padding-inline-start: 0px;
   -webkit-box-pack: justify;
   justify-content: center;
 }
-
 .social ul li {
   list-style: none;
   margin: 0 15px;
 }
 
+/* Who website was created by in footer */
 .footers {
   padding-top: 10px;
   font-size: calc(12px + 4 * ((100vw - 330px) / 438));
@@ -54,6 +59,7 @@
   margin: 1.5rem 0px 0px;
 }
 
+/* Do not display footer on desktop view */
 @media (min-width: 769px) {
   .foot {
     display: none;

@@ -1,36 +1,45 @@
+/* Block display on all div */
+div {
+  display: block;
+}
+
+/* Max width of content on the page */
+.paragraph2 {
+  max-width: 1028px;
+}
+
+/* A description of the portfolio section */
+.note {
+  margin-bottom: 8em;
+  font-size: 20px;
+}
+
+/* Font size of paragraph tag */
+p {
+  font-size: 18px;
+  padding-right: 1em;
+}
+
+/* Row containers that contain my projects */
 .row {
   display: flex;
   margin: 4rem 0px;
 }
 
+/* Left column of row container. Contains title, desc, attributes, links of project */
 .col-l {
   flex-basis: 60%;
   max-width: 1028px;
 }
 
-.col-r {
-  flex-basis: 40%;
-  display: flex;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  justify-content: center;
-  padding: 0px 1.5rem;
-}
-
-.paragraph2 {
-  max-width: 1028px;
-}
-
-div {
-  display: block;
-}
-
+/* Title of left column */
 h3 {
   text-decoration: underline #77001d;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
 }
 
+/* Project attributes of left column/Hover transition */
 #bubbles {
   display: inline-block;
   font-family: "Raleway", sans-serif;
@@ -53,6 +62,17 @@ h3 {
   transform: scale(1.1);
 }
 
+/* Margin separating the description of the project from links */
+.desc2 {
+  margin-bottom: 2em;
+}
+
+/* A notice on projects if there is no link */
+.notice {
+  color: #77001d;
+}
+
+/* View Site link of the project/Hover transition */
 .desc-link1 {
   margin-top: 1.5rem;
   text-transform: uppercase;
@@ -72,23 +92,12 @@ h3 {
   transition: all 0.5s ease-in-out 0s;
   text-decoration: none;
 }
-
 .desc-link1:hover {
   background: rgb(221, 221, 221);
   transition: all 0.75s ease-in-out 0s;
 }
 
-.imgs {
-  box-shadow: 0 15px 35px -7px #000;
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0 15px 35px -7px #000;
-  transition: all 0.75s ease-in-out 0s;
-  transition: transform 0.75s;
-}
-.imgs:hover {
-  transform: scale(1.1);
-}
-
+/* View Source link of the project/Hover transition */
 .desc-link2 {
   margin-top: 1.5rem;
   text-transform: uppercase;
@@ -108,27 +117,30 @@ h3 {
   color: #000;
   transition: all 0.5s ease-in-out 0s;
 }
-
 .desc-link2:hover {
   background: #77001d;
   color: #fff;
   transition: all 0.5s ease-in-out 0s;
 }
 
-.note {
-  margin-bottom: 8em;
-  font-size: 20px;
+/* Right column of row container. Contains an image of the project */
+.col-r {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0px 1.5rem;
 }
 
-p {
-  font-size: 18px;
-  padding-right: 1em;
+/* Image of the project/Hover transition */
+.imgs {
+  box-shadow: 0 15px 35px -7px #000;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 15px 35px -7px #000;
+  transition: all 0.75s ease-in-out 0s;
+  transition: transform 0.75s;
 }
-
-.desc2 {
-  margin-bottom: 2em;
-}
-
-.notice {
-  color: #77001d;
+.imgs:hover {
+  transform: scale(1.1);
 }
