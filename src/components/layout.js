@@ -54,14 +54,11 @@ export default function Layout({ children }) {
               <ListLink to="/portfolio/">
                 <span id="nav-ln">Portfolio</span>
               </ListLink>
-              <a
-                className="res"
-                href={resume}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span id="nav-ln">Resume</span>
-              </a>
+              <ListLink>
+                <a href={resume} target="_blank" rel="noopener noreferrer">
+                  <span id="nav-ln">Resume</span>
+                </a>
+              </ListLink>
             </ul>
           </div>
         </div>
@@ -90,14 +87,16 @@ export default function Layout({ children }) {
                   <ListLink to="/portfolio/">
                     <span id="ln">Portfolio</span>
                   </ListLink>
-                  <a
-                    className="res"
-                    href={resume}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <span id="ln">Resume</span>
-                  </a>
+                  <ListLink>
+                    <a
+                      className="res"
+                      href={resume}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span id="ln">Resume</span>
+                    </a>
+                  </ListLink>
                 </ul>
               </nav>
             </div>
