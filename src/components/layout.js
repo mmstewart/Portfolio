@@ -54,9 +54,14 @@ export default function Layout({ children }) {
               <ListLink to="/portfolio/">
                 <span id="nav-ln">Portfolio</span>
               </ListLink>
-              <ListLink to="/resume/">
+              <a
+                className="res"
+                href={resume}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span id="nav-ln">Resume</span>
-              </ListLink>
+              </a>
             </ul>
           </div>
         </div>
