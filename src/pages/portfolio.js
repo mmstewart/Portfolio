@@ -165,7 +165,6 @@ const PortfolioPage = ({ data }) => (
 									<div className="bubbles-l">
 										<span id="bubbles">React.js</span>
 										<span id="bubbles">SCSS</span>
-										<span id="bubbles">GraphQL</span>
 										<span id="bubbles">Unsplash API</span>
 									</div>
 									<div>
