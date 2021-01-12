@@ -54,7 +54,6 @@ export default function Layout({ children }) {
 							<ListLink to="/portfolio/">
 								<span id="nav-ln">Portfolio</span>
 							</ListLink>
-              //Fix
 							<ListLink to={resume.pdf}>
 								<span id="nav-ln">Resume</span>
 							</ListLink>
@@ -86,7 +85,6 @@ export default function Layout({ children }) {
 									<ListLink to="/portfolio/">
 										<span id="ln">Portfolio</span>
 									</ListLink>
-                  //Fix
 									<ListLink to={resume}>
 										<span id="ln">Resume</span>
 									</ListLink>
