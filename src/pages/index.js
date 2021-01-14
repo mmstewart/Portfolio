@@ -15,7 +15,7 @@ const IndexPage = () => (
 					<div className="outline">
 						<SEO title="Home" />
 						<div className="paragraph">
-							<p className="intro">
+							<div className="intro">
 								<Typist
 									avgTypingDelay={110}
 									stdTypingDelay={20}
@@ -24,7 +24,7 @@ const IndexPage = () => (
 									<Typist.Delay ms={800} />
 									<u>Hey, I'm Marcus</u>
 								</Typist>
-							</p>
+							</div>
 							<h1>
 								I am a web and software developer proficient at creating web applications and solving
 								challenging solutions.
@@ -41,7 +41,7 @@ const IndexPage = () => (
 									href="mailto:mss.stewart1@gmail.com"
 									target="_blank"
 									rel="noopener noreferrer"
-									class="ind-ln"
+									className="ind-ln"
 								>
 									Contact me
 								</a>

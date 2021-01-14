@@ -14,12 +14,15 @@ const activeStyles = {
   fontFamily: `Raleway, sans-serif`,
 };
 
-const ListLink = (props) => (
+const ListLink = props => (
   <li style={{ padding: 14 }}>
     <Link
       style={{ textDecoration: `none`, color: `rgb(100, 100, 100)` }}
       to={props.to}
-      activeStyle={activeStyles}
+	  activeStyle={activeStyles}
+	  href={props.href}
+	  target={props.target}
+	  rel={props.rel}
     >
       {props.children}
     </Link>
@@ -54,7 +57,7 @@ export default function Layout({ children }) {
 							<ListLink to="/portfolio/">
 								<span id="nav-ln">Portfolio</span>
 							</ListLink>
-							<ListLink to={resume.pdf}>
+							<ListLink href={resume} to="" target="_blank" rel="noopener noreferrer">
 								<span id="nav-ln">Resume</span>
 							</ListLink>
 						</ul>
@@ -85,7 +88,7 @@ export default function Layout({ children }) {
 									<ListLink to="/portfolio/">
 										<span id="ln">Portfolio</span>
 									</ListLink>
-									<ListLink to={resume}>
+									<ListLink href={resume} to="" target="_blank" rel="noopener noreferrer">
 										<span id="ln">Resume</span>
 									</ListLink>
 								</ul>
@@ -158,7 +161,15 @@ export default function Layout({ children }) {
 							</ul>
 						</div>
 						<div className="footer">
-							Built by <b>Marcus Stewart</b> with <a href="https://www.gatsbyjs.org/">Gatsby</a>
+							Built by <b>Marcus Stewart</b> with{' '}
+							<a
+								href="https://www.gatsbyjs.org/"
+								title="Gatsbyjs"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Gatsby
+							</a>
 						</div>
 					</header>
 				</nav>

@@ -141,15 +141,6 @@ body.scrolled .navbar {
   font-family: "Raleway", sans-serif;
 }
 
-/* Resume link on sidebar/Hover transition */
-ul .res {
-  color: rgb(100, 100, 100);
-}
-ul .res:hover,
-ul .res:focus {
-  color: rgb(100, 100, 100);
-}
-
 /* Link Hover Animation (Snapshot frame around text) */
 .lens .effect li {
   padding: 10px 20px;
