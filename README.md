@@ -16,7 +16,7 @@
 <p>Resources that helped me make this website possible!</p>
 
 - [Link Hover Animation](https://codepen.io/teeganlincoln/pen/bVNgBR)
-- [Blinking Cursor Animation](https://codepen.io/ArtemGordinsky/pen/GnLBq?js-preprocessor=none)
+- [React Typist](https://github.com/jstejada/react-typist#avgTypingDelay)
 - [Skills Icons](https://icons8.com/)
 - [Social Media Icons](https://fontawesome.com/)
 
