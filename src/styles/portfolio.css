@@ -10,7 +10,7 @@ div {
 
 /* A description of the portfolio section */
 .note {
-  margin-bottom: 8em;
+  margin-bottom: 1em;
   font-size: 20px;
 }
 
@@ -64,7 +64,7 @@ h3 {
 
 /* Margin separating the description of the project from links */
 .desc2 {
-  margin-bottom: 2em;
+  margin-bottom: .5em;
 }
 
 /* A notice on projects if there is no link */
@@ -74,6 +74,7 @@ h3 {
 
 /* View Site link of the project/Hover transition */
 .desc-link1 {
+  display: inline-block;
   margin-top: 1.5rem;
   text-transform: uppercase;
   padding: 0.4rem 1rem;
@@ -99,6 +100,7 @@ h3 {
 
 /* View Source link of the project/Hover transition */
 .desc-link2 {
+  display: inline-block;
   margin-top: 1.5rem;
   text-transform: uppercase;
   padding: 0.4rem 1rem;
