@@ -85,7 +85,6 @@ export default function Layout({ children }) {
 			fill: '#373a47',
 		},
 		bmItemList: {
-			padding: '1em',
 			flexDirection: "column",
 			justifyContent: "center",
 			alignItems: "center",
