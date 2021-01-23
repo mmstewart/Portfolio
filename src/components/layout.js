@@ -10,17 +10,20 @@ import resume from "../../static/resume.pdf";
 
 /* Active Link Color/Text Decoration */
 const activeStyles = {
-  color: `#111`,
-  textDecoration: `underline`,
+  textDecoration: `underline #111`,
+  textDecorationThickness: '2.5px',
   fontFamily: `Raleway, sans-serif`,
 };
 
-const ListLink = (props) => (
+const ListLink = props => (
   <li style={{ padding: 14 }}>
     <Link
       style={{ textDecoration: `none`, color: `rgb(100, 100, 100)` }}
       to={props.to}
-      activeStyle={activeStyles}
+	  activeStyle={activeStyles}
+	  href={props.href}
+	  target={props.target}
+	  rel={props.rel}
     >
       {props.children}
     </Link>
@@ -153,10 +156,8 @@ export default function Layout({ children }) {
 									<ListLink to="/portfolio/">
 										<span id="ln">Portfolio</span>
 									</ListLink>
-									<ListLink>
-										<a className="res" href={resume} target="_blank" rel="noopener noreferrer">
-											<span id="ln">Resume</span>
-										</a>
+									<ListLink href={resume} to="" target="_blank" rel="noopener noreferrer">
+										<span id="ln">Resume</span>
 									</ListLink>
 								</ul>
 							</nav>
@@ -228,7 +229,15 @@ export default function Layout({ children }) {
 							</ul>
 						</div>
 						<div className="footer">
-							Built by <b>Marcus Stewart</b> with <a href="https://www.gatsbyjs.org/">Gatsby</a>
+							Built by <b>Marcus Stewart</b> with{' '}
+							<a
+								href="https://www.gatsbyjs.org/"
+								title="Gatsbyjs"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Gatsby
+							</a>
 						</div>
 					</header>
 				</nav>

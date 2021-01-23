@@ -148,15 +148,6 @@ body.scrolled .navbar {
   font-family: "Raleway", sans-serif;
 }
 
-/* Resume link on sidebar/Hover transition */
-ul .res {
-  color: rgb(100, 100, 100);
-}
-ul .res:hover,
-ul .res:focus {
-  color: rgb(100, 100, 100);
-}
-
 /* Link Hover Animation (Snapshot frame around text) */
 .lens .effect li {
   padding: 10px 20px;
@@ -293,6 +284,20 @@ a:focus {
   color: rgb(100, 100, 100);
   font-size: 12px;
   font-family: "Raleway", sans-serif;
+}
+
+@media (max-width: 1498px) and (min-width: 769px) {
+  .desc-link1 {
+    font-size: calc(10px + 3 * ((100vw - 1024px) / 474));
+    padding: calc(7px + 3 * ((100vw - 1024px) / 474));
+    margin-right: calc(12px + 9 * ((100vw - 1024px) / 474));
+  }
+
+  .desc-link2 {
+    font-size: calc(10px + 3 * ((100vw - 1024px) / 474));
+    padding: calc(7px + 3 * ((100vw - 1024px) / 474));
+    margin-right: calc(12px + 9 * ((100vw - 1024px) / 474));
+  }
 }
 
 /* Text resize change on width before mobile/tablet */
@@ -441,7 +446,7 @@ a:focus {
   .desc-link2 {
     font-size: calc(10px + 2 * ((100vw - 320px) / (448))) !important;
     margin-right: unset !important;
-    display: block;
+    display: block !important;
   }
   .col-r {
     flex-basis: 100% !important;
